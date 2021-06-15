@@ -7,14 +7,15 @@ import {Component, EventEmitter, Output} from '@angular/core';
 })
 export class HeaderComponent {
 
-  constructor() { }
+  constructor() {
+  }
 
   @Output()
-  pageRequested = new EventEmitter<number>();
+  pageRequested = 1;
 
   onChangePage(page: number) {
-    console.log("page " + page +  "clicked");
-    this.pageRequested.emit(page);
+    console.log('page ' + page + 'clicked');
+    this.pageRequested = page;
   }
 
 

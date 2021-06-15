@@ -1,18 +1,18 @@
 import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
 
-  currentPage = 1;
+    currentPage = 1;
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
 
-  onPageChange(page:number ) {
-    this.currentPage = page;
-  }
+    onPageChange(page: number) {
+        this.currentPage = page;
+    }
 }
