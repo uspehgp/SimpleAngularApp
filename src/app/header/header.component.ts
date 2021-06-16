@@ -10,7 +10,7 @@ export class HeaderComponent {
   constructor() {
   }
 
-  @Output()
+  // @Output()
   pageRequested = 1;
 
   onChangePage(page: number) {
