@@ -13,9 +13,13 @@ export class HeaderComponent {
   // @Output()
   pageRequested = 1;
 
+  @Output()
+  pageGangedEvent = new EventEmitter<number>();
+
   onChangePage(page: number) {
     console.log('page ' + page + 'clicked');
     this.pageRequested = page;
+    this.pageGangedEvent.emit(page);
   }
 
 
