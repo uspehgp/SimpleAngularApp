@@ -10,10 +10,13 @@ export class AppComponent implements OnInit {
 
   // currentPage = 1;
 
+  startTime: string;
+
   @ViewChild('footer', {static: true})
   footerComponent: FooterComponent;
 
   ngOnInit(): void {
+    this.startTime = new Date().toString();
   }
 
   // onPageChange(page: number) {
